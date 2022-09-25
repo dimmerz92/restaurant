@@ -66,7 +66,7 @@ function footer() {
 function favicon() {
     const favicon = document.createElement("link");
     favicon.rel = "shortcut icon";
-    favicon.href = "../src/img/favicon.png";
+    favicon.href = "./favicon.png";
     favicon.type = "image/x-icon";
     return favicon
 };
