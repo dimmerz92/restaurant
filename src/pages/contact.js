@@ -1,5 +1,6 @@
 import { doubleLists } from "./menu";
 import "../styles/contact.css"
+import Loc from "../img/location.png";
 
 function contact() {
     const main = document.createElement("main");
@@ -33,8 +34,8 @@ function contact() {
     const locationP = document.createElement("p");
     locationP.textContent = "You can find us in the one and only capital city of the world, Perth, Western Australia";
     location.appendChild(locationP);
-    const westralia = document.createElement("img");
-    westralia.src = "../src/img/location.png";
+    const westralia = new Image();
+    westralia.src = Loc;
     location.appendChild(westralia);
     main.appendChild(location);
 

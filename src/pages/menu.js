@@ -1,4 +1,9 @@
 import "../styles/menu.css";
+import Gyoza from "../img/gyoza.png";
+import Edamame from "../img/edamame.png";
+import Karaage from "../img/karaage.png";
+import Tofu from "../img/tofu.png";
+import Ramen from "../img/ramen.png";
 
 function menu() {
     const main = document.createElement("main");
@@ -28,10 +33,10 @@ function menu() {
     entreeTitle.textContent = linkNames[0];
     entreeTitle.id = linkNames[0].replace(/ /g, "");
     entree.appendChild(entreeTitle);
-    entree.appendChild(menuItem("Gyoza", "../src/img/gyoza.png", "Delicious pork filled pan-fried dumplings", "450")); // Gyoza
-    entree.appendChild(menuItem("Edamame", "../src/img/edamame.png", "Warm salted edamame (soybeans)", "250")); // Edamame
-    entree.appendChild(menuItem("Karaage", "../src/img/karaage.png", "Succulent chicken fried in potato starch", "450")); // Karaage
-    entree.appendChild(menuItem("Agedashi Tofu", "../src/img/tofu.png", "Soft tofu fried in potato starch served in agedashi broth", "350"));
+    entree.appendChild(menuItem("Gyoza", Gyoza, "Delicious pork filled pan-fried dumplings", "450")); // Gyoza
+    entree.appendChild(menuItem("Edamame", Edamame, "Warm salted edamame (soybeans)", "250")); // Edamame
+    entree.appendChild(menuItem("Karaage", Karaage, "Succulent chicken fried in potato starch", "450")); // Karaage
+    entree.appendChild(menuItem("Agedashi Tofu", Tofu, "Soft tofu fried in potato starch served in agedashi broth", "350"));
     main.appendChild(entree);
 
     // Ramen section
@@ -41,7 +46,7 @@ function menu() {
     ramenTitle.textContent = linkNames[1];
     ramenTitle.id = linkNames[1].replace(/ /g, "");
     ramen.appendChild(ramenTitle);
-    ramen.appendChild(menuItem("", "../src/img/ramen.png", "Ramen noodles served in broth, topped with chashu pork slices", "1250"));
+    ramen.appendChild(menuItem("", Ramen, "Ramen noodles served in broth, topped with chashu pork slices", "1250"));
 
     // Ramen options
     const ramenOptions = document.createElement("div");
@@ -101,7 +106,7 @@ function menuItem(name, img, desc, price) {
 
     // Item image & description
     const figure = document.createElement("figure");
-    const itemImg = document.createElement("img");
+    const itemImg = new Image();
     itemImg.src = img;
     figure.appendChild(itemImg);
     const itemDesc = document.createElement("figcaption");

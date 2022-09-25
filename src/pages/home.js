@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import Rameme from "../img/rameme.png";
 
 function home() {
     const main = document.createElement("main");
@@ -22,8 +23,8 @@ function home() {
     main.appendChild(bookings);
 
     // Rameme
-    const rameme = document.createElement("img");
-    rameme.src = "/src/img/rameme.png";
+    const rameme = new Image();
+    rameme.src = Rameme;
     rameme.alt = "It's all ramen, always has been";
     main.appendChild(rameme);
 

@@ -1,12 +1,13 @@
 import home from "../pages/home";
 import menu from "../pages/menu";
 import contact from "../pages/contact";
+import Logo from "../img/logo.png";
 
 function header() {
     // Creates website header
     const header = document.createElement("header");
-    const logo = document.createElement("img");
-    logo.src = "../src/img/logo.png";
+    const logo = new Image();
+    logo.src = Logo;
     header.appendChild(logo);
     const h1 = document.createElement("h1");
     h1.textContent = "The Ramen Shaman";
