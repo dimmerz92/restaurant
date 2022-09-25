@@ -1,0 +1,4 @@
+main.home {
+    grid-template-rows: auto auto auto 1fr;
+    text-align: center;
+}

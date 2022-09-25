@@ -1,0 +1,108 @@
+.menu h2 {
+    text-align: center;
+}
+
+.menu .jumps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu .jumps a{
+    color: var(--orange);
+}
+
+.menu.entree {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu.entree h3 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.menu h3 {
+    text-decoration: underline;
+    text-align: center;
+    scroll-margin-top: 160px;
+}
+
+.menuItem {
+    width: 20vw;
+    justify-self: center;
+    align-self: start;
+    text-align: center;
+    border: 5px black solid;
+    padding-top: 1rem;
+}
+
+.menuItem:nth-child(odd) {
+    margin-top: 25%;
+}
+
+.menuItem > figcaption {
+    font-weight: bold;
+}
+
+.menuItem img {
+    width: 10vw;
+    height: auto;
+}
+
+.menu.ramen {
+    display: grid;
+    justify-content: center;
+}
+
+.menu.ramen > .menuItem {
+    justify-self: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.options > div {
+    display: grid;
+    justify-content: center;
+}
+
+.options > div > p:first-of-type {
+    font-weight: bold;
+}
+
+.menu.drinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.menu.drinks > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.menu.drinks > div > h3 {
+    grid-column: 1 / 3;
+}
+
+.menu.drinks > div > ul {
+    display: table;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.menu.drinks > div > ul:nth-child(odd) {
+    text-align: end;
+    width: 12ch;
+}
+
+.menu.drinks > div > ul > li {
+    height: 1.5rem;
+    white-space: nowrap;
+}
+

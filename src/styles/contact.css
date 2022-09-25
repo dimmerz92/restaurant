@@ -1,0 +1,21 @@
+main.contact {
+    justify-items: center;
+}
+
+.contact .open {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact .open ul {
+    list-style: none;
+}
+
+.contact .location {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contact .location img{
+    width: 50%;
+}

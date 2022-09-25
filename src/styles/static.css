@@ -1,0 +1,88 @@
+@font-face {
+    font-family: tokyo;
+    src: url(../font/NightinTokyo.ttf);
+}
+
+:root {
+    --black: #423e3b;
+    --scarlet: #ff2e00;
+    --orange: #fea82f;
+    --cream: #fffecb;
+    font-family: tokyo;
+    color: var(--cream);
+}
+
+body {
+    overflow-y: scroll;
+    background-color: var(--black);
+    margin: 0;
+}
+
+#content {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    padding: 8px 0;
+    background-color: var(--scarlet);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: var(--black);
+    border-bottom: 2px var(--scarlet) solid;
+    border-left: 2px var(--black) solid;
+    border-right: 2px var(--black) solid;
+    gap: 1rem;
+    height: 60px;
+    width: 70vw;
+    top: 96px;
+}
+
+nav > button {
+    font-family: inherit;
+    font-size: 2rem;
+    min-width: 10ch;
+    align-self: flex-end;
+    background-color: var(--cream);
+    border-color: transparent;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--scarlet);
+    color: var(--cream);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    border: 2px var(--scarlet) solid;
+    width: 70vw;
+    margin-top: 156px;
+}
+
+footer {
+    text-align: center;
+}
